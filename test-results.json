@@ -1,0 +1,335 @@
+{
+  "config": {
+    "configFile": "C:\\ML_Projects\\Random_ui\\playwright.config.ts",
+    "rootDir": "C:/ML_Projects/Random_ui/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/ML_Projects/Random_ui/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/ML_Projects/Random_ui/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/ML_Projects/Random_ui/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/ML_Projects/Random_ui/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/ML_Projects/Random_ui/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/ML_Projects/Random_ui/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/ML_Projects/Random_ui/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "C:/ML_Projects/Random_ui/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/ML_Projects/Random_ui/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "C:/ML_Projects/Random_ui/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "demo-self-healing.spec.ts",
+      "file": "demo-self-healing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "🎯 Self-Healing Demo - Selector Changes",
+          "file": "demo-self-healing.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "🛠️ Demo: Login button selector change (.login-btn → .btn-primary)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1317,
+                      "error": {
+                        "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('button[type=\"button\"]') resolved to 3 elements:\n    1) <button type=\"button\" id=\"togglePassword\" class=\"toggle-password\">…</button> aka getByRole('button', { name: '' })\n    2) <button type=\"button\" class=\"social-btn google-btn\">…</button> aka getByRole('button', { name: ' Google' })\n    3) <button type=\"button\" class=\"social-btn github-btn\">…</button> aka getByRole('button', { name: ' GitHub' })\n\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[type=\"button\"]')\u001b[22m\n",
+                        "stack": "Error: expect.toBeVisible: Error: strict mode violation: locator('button[type=\"button\"]') resolved to 3 elements:\n    1) <button type=\"button\" id=\"togglePassword\" class=\"toggle-password\">…</button> aka getByRole('button', { name: '' })\n    2) <button type=\"button\" class=\"social-btn google-btn\">…</button> aka getByRole('button', { name: ' Google' })\n    3) <button type=\"button\" class=\"social-btn github-btn\">…</button> aka getByRole('button', { name: ' GitHub' })\n\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[type=\"button\"]')\u001b[22m\n\n    at C:\\ML_Projects\\Random_ui\\tests\\demo-self-healing.spec.ts:29:31",
+                        "location": {
+                          "file": "C:\\ML_Projects\\Random_ui\\tests\\demo-self-healing.spec.ts",
+                          "column": 31,
+                          "line": 29
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mconst\u001b[39m loginButton \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m selectors\u001b[33m.\u001b[39mgetLoginButton()\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(loginButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Verify the button is functional\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m loginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\ML_Projects\\Random_ui\\tests\\demo-self-healing.spec.ts",
+                            "column": 31,
+                            "line": 29
+                          },
+                          "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('button[type=\"button\"]') resolved to 3 elements:\n    1) <button type=\"button\" id=\"togglePassword\" class=\"toggle-password\">…</button> aka getByRole('button', { name: '' })\n    2) <button type=\"button\" class=\"social-btn google-btn\">…</button> aka getByRole('button', { name: ' Google' })\n    3) <button type=\"button\" class=\"social-btn github-btn\">…</button> aka getByRole('button', { name: ' GitHub' })\n\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[type=\"button\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mconst\u001b[39m loginButton \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m selectors\u001b[33m.\u001b[39mgetLoginButton()\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(loginButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Verify the button is functional\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m loginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\ML_Projects\\Random_ui\\tests\\demo-self-healing.spec.ts:29:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🎯 DEMO: Testing self-healing for button selector change\n"
+                        },
+                        {
+                          "text": "   Old selector: .login-btn\n"
+                        },
+                        {
+                          "text": "   New selector: .btn-primary (your change)\n"
+                        },
+                        {
+                          "text": "   Test should automatically find the new selector!\n"
+                        },
+                        {
+                          "text": "✅ Found login button using: button[type=\"button\"]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-09T22:42:32.624Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\ML_Projects\\Random_ui\\test-results\\demo-self-healing-🎯-Self--ed654-ge-login-btn-→-btn-primary--chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\ML_Projects\\Random_ui\\test-results\\demo-self-healing-🎯-Self--ed654-ge-login-btn-→-btn-primary--chromium\\video.webm"
+                        },
+                        {
+                          "name": "_error-context-0",
+                          "contentType": "text/markdown",
+                          "path": "C:\\ML_Projects\\Random_ui\\test-results\\demo-self-healing-🎯-Self--ed654-ge-login-btn-→-btn-primary--chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\ML_Projects\\Random_ui\\tests\\demo-self-healing.spec.ts",
+                        "column": 31,
+                        "line": 29
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "364092ba2ff254340973-38440de9c7703946c4ae",
+              "file": "demo-self-healing.spec.ts",
+              "line": 15,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Self-Healing Demo - Complete User Flow",
+          "file": "demo-self-healing.spec.ts",
+          "line": 281,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login Button Selector Change Demo",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 2492,
+                      "error": {
+                        "message": "Error: page.waitForTimeout: Target page, context or browser has been closed",
+                        "stack": "Error: page.waitForTimeout: Target page, context or browser has been closed\n    at C:\\ML_Projects\\Random_ui\\tests\\demo-self-healing.spec.ts:632:16",
+                        "location": {
+                          "file": "C:\\ML_Projects\\Random_ui\\tests\\demo-self-healing.spec.ts",
+                          "column": 16,
+                          "line": 632
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 630 |\u001b[39m     }\n \u001b[90m 631 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 632 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 633 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 634 |\u001b[39m })\u001b[33m;\u001b[39m \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\ML_Projects\\Random_ui\\tests\\demo-self-healing.spec.ts",
+                            "column": 16,
+                            "line": 632
+                          },
+                          "message": "Error: page.waitForTimeout: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m 630 |\u001b[39m     }\n \u001b[90m 631 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 632 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 633 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 634 |\u001b[39m })\u001b[33m;\u001b[39m \u001b[0m\n\u001b[2m    at C:\\ML_Projects\\Random_ui\\tests\\demo-self-healing.spec.ts:632:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🎯 Testing specific selector change: .login-btn → .btn-primary\n"
+                        },
+                        {
+                          "text": "🔍 Trying old selector: .login-btn\n"
+                        },
+                        {
+                          "text": "   Old selector (.login-btn) found: 0 elements\n"
+                        },
+                        {
+                          "text": "🔍 Trying new selector: .btn-primary\n"
+                        },
+                        {
+                          "text": "   New selector (.btn-primary) found: 0 elements\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-09T22:42:32.623Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\ML_Projects\\Random_ui\\test-results\\demo-self-healing-Self-Hea-04447-Button-Selector-Change-Demo-chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\ML_Projects\\Random_ui\\tests\\demo-self-healing.spec.ts",
+                        "column": 16,
+                        "line": 632
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "364092ba2ff254340973-7ff60ea7937b518f39a8",
+              "file": "demo-self-healing.spec.ts",
+              "line": 598,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-06-09T22:42:31.270Z",
+    "duration": 4371.014999999999,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

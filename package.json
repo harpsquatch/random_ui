@@ -1,0 +1,37 @@
+{
+  "name": "login-ui-playwright-tests",
+  "version": "1.0.0",
+  "description": "AI-Powered Self-healing Playwright tests for Login UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:ai": "playwright test tests/ai-powered.spec.ts",
+    "install:browsers": "playwright install"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "ui",
+    "login",
+    "self-healing",
+    "ai-powered"
+  ],
+  "author": "QA Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "playwright-chromium": "^1.52.0",
+    "openai": "^4.67.0",
+    "dotenv": "^16.4.5"
+  }
+}
